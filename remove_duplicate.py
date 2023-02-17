@@ -8,6 +8,8 @@
 
 #Return k after placing the final result in the first k slots of nums.
 
+print(range(4))
+
 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
