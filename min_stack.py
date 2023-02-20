@@ -17,7 +17,8 @@ class MinStack:
 
     def push(self, val: int) -> None:
         self.stack.append(val)
-        # this allows us to keep track of elements that are less than the current min. this will not run if the element being pushed is greater than current min.
+        # this allows us to keep track of elements that are less than the current min. this will not run if the element being pushed 
+        # is greater than current min.
         if val <= self.curmin:
             self.prevmin.append(self.curmin)
             self.curmin = val
