@@ -5,7 +5,6 @@
 #Assume all nodes in the linked list are 0-indexed.
 
 #Implement the MyLinkedList class:
-
 #MyLinkedList() Initializes the MyLinkedList object.
 
 #int get(int index) Get the value of the indexth node in the linked list. If the index is invalid, return -1.
