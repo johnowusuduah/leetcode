@@ -1,0 +1,3 @@
+
+# RUN INFERENCE WITH NEEVD TEST DATA ON PRELIMINARY MODEL
+python train_net.py --num-gpus-per-machine 1 --config-file configs/GRiT_B_DenseCap.yaml --output-dir-name ./output/AP_results --eval-only MODEL.WEIGHTS models/finetuned/model_final.pth
