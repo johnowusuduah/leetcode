@@ -1,5 +1,5 @@
 #Given an array of integers nums, sort the array in ascending order and return it.
-# Use Insert Sort with O(n**2)
+# Use Insert Sort with O(n**2). It's really O(n**2)/2 but coefficients don't matter in Big 0 notation
 
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
