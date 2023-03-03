@@ -23,7 +23,7 @@ class Solution(object):
         left = s
         #partition elements smaller than pivot to the leftmost side and vice versa
         for i in range(s, e):
-            if (nums[i] < piv):
+            if (nums[i] <= piv):
                 tmp = nums[left]
                 nums[left] = nums[i]
                 nums[i] = tmp
