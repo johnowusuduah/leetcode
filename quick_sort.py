@@ -20,18 +20,16 @@ class Solution(object):
         if (e-s+1)<=1: return nums # base case
 
         piv = nums[e]
-        left = s
+        p = s
         #partition elements smaller than pivot to the leftmost side and vice versa
         for i in range(s, e):
             if (nums[i] <= piv):
-                tmp = nums[left]
-                nums[left] = nums[i]
-                nums[i] = tmp
-                left+=1
+               nums[p], nums[i] = nums[i], nums[p]
+               left+=1
 
-        #move pivot in between and left and right side
-        nums[e] = nums[left]
-        nums[left] = piv
+        #move pivot in between and left and right side and move current element pointed
+        nums[e] = nums[p]
+        nums[p] = piv
 
         #recursive calls on left and right side
         self.quicksort(nums, s, left-1)
