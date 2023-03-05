@@ -28,8 +28,7 @@ class Solution(object):
                left+=1
 
         #move pivot in between and left and right side and move current element pointed
-        nums[e] = nums[p]
-        nums[p] = piv
+        nums[e], nums[p] = nums[p], piv
 
         #recursive calls on left and right side
         self.quicksort(nums, s, left-1)
