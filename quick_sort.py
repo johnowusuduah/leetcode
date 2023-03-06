@@ -21,7 +21,6 @@ class Solution(object):
 
         piv = nums[e]
         left = s
-
         #partition elements smaller than pivot to the leftmost side and vice versa
         for i in range(s, e):
             if (nums[i] < piv):
