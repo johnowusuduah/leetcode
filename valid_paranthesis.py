@@ -9,7 +9,7 @@ class Solution:
         # use stack to store open paranthesis
         stack = []
         # use dictionary to compare open paranthesis that are popped to 
-        # close paranthesis in string after exausting open paranthesis
+        # close paranthesis in string after exhausting open paranthesis
         dict = {"(":")","[":"]","{":"}"}
 
         for char in s:
